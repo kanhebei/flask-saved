@@ -13,30 +13,17 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'jajajjajjja'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/sogou'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# app.config['STORAGE_PROVIDER_DEFAULT'] = 'oss'
+
 # app.config['STORAGE_LOCAL_BASE_PATH'] = '../upload/pic'
 
-# app.config['STORAGE_OSS_ACCESS_KEY'] = 'LTAI4G6CqXNvyV6MoJf6vzCv'
-# app.config['STORAGE_OSS_SECRET_KEY'] = 'rL5zfM80g6i02kmhhhMuuhvpfJdLbo'
-# app.config['STORAGE_OSS_ENDPOINT'] = 'oss-cn-zhangjiakou.aliyuncs.com'
-# app.config['STORAGE_OSS_BUCKET'] = 'haowainet'
-# app.config['STORAGE_OSS_BASE_PATH'] = 'pic'
-
 # app.config['STORAGE_PROVIDER_DEFAULT'] = 'oss'
-# app.config['STORAGE_OSS_ACCESS_KEY'] = 'LTAI4G6CqXNvyV6MoJf6vzCv'
-# app.config['STORAGE_OSS_SECRET_KEY'] = 'rL5zfM80g6i02kmhhhMuuhvpfJdLbo'
-# app.config['STORAGE_OSS_ENDPOINT'] = 'oss-cn-zhangjiakou.aliyuncs.com'
-# app.config['STORAGE_OSS_BUCKET'] = 'kanhebei'
-# app.config['STORAGE_OSS_BASE_PATH'] = 'picture'
-# app.config['STORAGE_OSS_DOMIAN'] = 'http://res.dingdao.net.cn'
+# app.config['STORAGE_OSS_ACCESS_KEY'] = ''
+# app.config['STORAGE_OSS_SECRET_KEY'] = ''
+# app.config['STORAGE_OSS_ENDPOINT'] = ''
+# app.config['STORAGE_OSS_BUCKET'] = ''
+# app.config['STORAGE_OSS_BASE_PATH'] = ''
+# app.config['STORAGE_OSS_DOMIAN'] = ''
 # app.config['STORAGE_OSS_CNAME'] = True
-# ALIYUN_OSS_KEY=
-# ALIYUN_OSS_SECRET=
-# ALIYUN_OSS_ENDPOINT=
-# ALIYUN_OSS_BUCKET=
-# ALIYUN_OSS_CNAME=True
-# ALIYUN_OSS_DOMAIN=http://res.dingdao.net.cn
-
 
 tool_bar = DebugToolbarExtension(app)
 app.debug = True
