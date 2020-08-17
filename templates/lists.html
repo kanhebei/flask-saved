@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>图片列表</title>
+    </head>
+    <body>
+        <h1>测试</h1>
+        <p><a href="{{ url_for('.index') }}">上传</a></p>
+        <ul>
+            {% for item in result %}
+                <li>
+                    <img src="{{ item.url }}" width="200"/>
+                    <a href="{{ url_for('.delete', picture=item.id) }}">删除</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
